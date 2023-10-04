@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Stock Predictor</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <h1>Stock Price Predictor Bot</h1>
+
+    <div class="container">
+      <div class="left-box">
+        <div class = "left-box-top-left">
+          <div class = "left-caption">
+            MARKET CAP
+          </div>
+          <div id = "market-cap"></div>
+        </div>
+
+        <div class = "left-box-top-left-2">
+          <div class = "left-caption">
+            VOLUME
+          </div>
+          <div id = "volume"></div>
+        </div>
+
+        <div class = "left-box-middle-right">
+          <div class = "left-caption">
+            P/E RATIO
+          </div>
+          <div id = "pe-ratio"></div>
+        </div>
+
+        <div class = "left-box-middle-left">
+          <div class = "left-caption">
+            EARNING/SHARE
+          </div>
+          <div id = "eps"></div>
+        </div>
+
+        <div class = "left-box-bottom-right">
+          <div class = "left-caption">
+            VOLATILITY
+          </div>
+          <div id = "volatility"></div>
+        </div>
+
+        <div class = "left-box-bottom-left">
+          <div class = "left-caption">
+            DIVIDEND YIELD
+          </div>
+          <div id = "dividend-yield"></div>
+        </div>
+
+        <div class = "left-box-top-right">
+          <div id = "buy-or-not"></div>
+        </div>
+
+        <div class = "left-box-top-right-2">
+          <div class = "low-high">
+            HIGH
+          </div>
+          <div id = "high"></div>
+        </div>
+
+        <div class = "left-box-top-right-3">
+          <div class = "low-high">
+            LOW
+          </div>
+          <div id = "low"></div>
+        </div>
+      </div>
+      <div class="middle-box">
+        <div id = "live"></div>
+        <div class = "middle-box-container">
+          <div class = "left-top">
+            <div id = tdy-open></div>
+            <div class = "caption">PREV OPEN</div>
+          </div>
+          <div class = "left-bottom">
+            <div id = tdy-close></div>
+            <div class = "caption">CURR CLOSE</div>
+          </div>
+          <div class = "right-top">
+            <div id = pred-open></div>
+            <div class = "caption">TMRW OPEN</div>
+          </div>
+          <div class = "right-bottom">
+            <div id = pred-close></div>
+            <div class = "caption">TMRW CLOSE</div>
+          </div>
+        </div>
+        <div id = "root"></div> 
+      </div>
+      <div class="right-box">
+        <div id = "graph"></div>
+        <canvas id = "canvas" height = "350"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
